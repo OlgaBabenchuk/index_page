@@ -1,0 +1,32 @@
+/* font: Helvetica Inserat LT */
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/HelveticaInseratLT/Helvetica Inserat LT.eot');
+	src: url('../fonts/HelveticaInseratLT/Helvetica Inserat LT.woff2') format('woff2'),
+		url('../fonts/HelveticaInseratLT/Helvetica Inserat LT.woff') format('woff'),
+		url('../fonts/HelveticaInseratLT/Helvetica Inserat LT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* font: MyriadPro - BlackCond */
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro_BlackCond/MyriadPro-BlackCond.eot');
+	src: url('../fonts/MyriadPro_BlackCond/MyriadPro-BlackCond.woff2') format('woff2'),
+		url('../fonts/MyriadPro_BlackCond/MyriadPro-BlackCond.woff') format('woff'),
+		url('../fonts/MyriadPro_BlackCond/MyriadPro-BlackCond.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* font: Tahoma */
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/Tahoma/Tahoma-Regular.eot');
+	src: url('../fonts/Tahoma/Tahoma-Regular.woff2') format('woff2'),
+		url('../fonts/Tahoma/Tahoma-Regular.woff') format('woff'),
+		url('../fonts/Tahoma/Tahoma-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
