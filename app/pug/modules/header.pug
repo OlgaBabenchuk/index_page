@@ -14,22 +14,17 @@ ul.language
 		img(src="./img/de.png" alt="")
 
 .mob-menu-trigger
+
+- var data = {"items": [{"title": "Home"}, {"title": "Sports"}, {"title": "Casino"}, {"title": "Games", "sublevel": true, "items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe blackPearl"}, {"title": "Super slots attack"} ] }] };
+- var subdata = {"items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe black Pearl"}, {"title": "Super slots attack"}] };
+
 nav.main-nav
+	each item in data.items
+		a(href="#" class="menu__item")= item.title
+			if item.sublevel
+				ul.submenu
+					each item in subdata.items
+						li.submenu__item
+							a(href="#")= item.title
 	.mob-menu-close
 		span
-	mixin mainMenu(data)
-		ul.menu
-			each item in data.items
-				li.menu__item
-					a(href="#")= item.title
-					if item.sublevel
-						ul.submenu
-							each item in subdata.items
-								li.submenu__item
-									a(href="#")= item.title
-
-
-	- var data = {"items": [{"title": "Home"}, {"title": "Sports"}, {"title": "Casino"}, {"title": "Games", "sublevel": true, "items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe blackPearl"}, {"title": "Super slots attack"} ] }] };
-	- var subdata = {"items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe black Pearl"}, {"title": "Super slots attack"}] }
-
-	+mainMenu(data)
