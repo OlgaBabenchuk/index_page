@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
  
   /*   toggle sidebar menu   */
 
@@ -15,12 +15,12 @@ $(document).ready(function() {
 
   /*   dropdown main naviation   */  
 
-  $('.menu__item').hover(function(){
-    $(this).children('.submenu').slideDown(300);
-  }, function(){
-    $(this).children('.submenu').slideUp(300);
-    }
-  );
+  // $('.menu__item').hover(function(){
+  //   $(this).siblings('.submenu').slideDown(300);
+  // }, function(){
+  //   $(this).siblings('.submenu').slideUp(300);
+  //   }
+  // );
 
 
   /*   select language   */
@@ -46,7 +46,8 @@ $(document).ready(function() {
   //     $(this).next().slideUp(300);
   //   }
   // });
-});
+
+//});
 
 
 window.onload = function() {
@@ -111,8 +112,5 @@ window.onload = function() {
       }
     });
   });
- 
-
- 
 
 };

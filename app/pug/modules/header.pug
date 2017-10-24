@@ -15,16 +15,15 @@ ul.language
 
 .mob-menu-trigger
 
-- var data = {"items": [{"title": "Home"}, {"title": "Sports"}, {"title": "Casino"}, {"title": "Games", "sublevel": true, "items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe blackPearl"}, {"title": "Super slots attack"} ] }] };
-- var subdata = {"items": [{"title": "Mega Moolah"}, {"title": "The curse of thhe black Pearl"}, {"title": "Super slots attack"}] };
+- var menus = [{text: 'Home', link: '#'}, {text: 'Sports', link: '#'}, {text: 'Casino', link: '#'}, {text: 'Games', submenu:true }];
+- var submenu = [{text: 'Mega Moolah', link: '#'}, {text: 'The curse of thhe blackPearl', link: '#'}, {text: 'The curse of thhe blackPearl', link: '#'}];
 
 nav.main-nav
-	each item in data.items
-		a(href="#" class="menu__item")= item.title
-			if item.sublevel
-				ul.submenu
-					each item in subdata.items
-						li.submenu__item
-							a(href="#")= item.title
+	each list in menus
+		a(href="#" class="menu__item")= list.text
+			if list.submenu
+				//- .submenu
+				each list in submenu
+					a(href="#" class="submenu__item")= list.text
 	.mob-menu-close
 		span

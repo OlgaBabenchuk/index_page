@@ -1,46 +1,40 @@
 {
-	"menudata": [
+	"menu": [
 		{
 			"title": "Home",
 			"url": "#",
-			"id": "1",
-			"parentid": "-1"
+			"sub": null
 		},
 		{
 			"title": "Sports",
 			"url": "#",
-			"id": "2",
-			"parentid": "-1"
+			"sub": null
 		},
 		{
 			"title": "Casino",
 			"url": "#",
-			"id": "3",
-			"parentid": "-1"
+			"sub": null
 		},
 		{
 			"title": "Games",
 			"url": "#",
-			"id": "4",
-			"parentid": "-1"
-		},
-		{
-			"title": "Mega Moolah",
-			"url": "#",
-			"id": "5",
-			"parentid": "4"
-		},
-		{
-			"title": "The curse of thhe black Pearl",
-			"url": "#",
-			"id": "6",
-			"parentid": "4"
-		},
-		{
-			"title": "Super slots attack",
-			"url": "#",
-			"id": "7",
-			"parentid": "4"
+			"sub": [
+				{
+					"title": "Mega Moolah",
+					"url": "#",
+					"sub": null
+				},
+				{
+					"title": "The curse of thhe black Pearl",
+					"url": "#",
+					"sub": null
+				},
+				{
+					"title": "Super slots attack",
+					"url": "#",
+					"sub": null
+				}
+			]
 		}
 	[
 {
