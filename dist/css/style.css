@@ -773,6 +773,8 @@ header
 
     position: relative;
 
+    display: inline-block;
+
     margin-right: 4px;
     padding: 10px 30px;
 
@@ -796,29 +798,24 @@ header
 {
     position: absolute;
     z-index: 10; 
-    top: 100%;
-
-    display: none;
 
     width: 13em;
     padding: 4px;
 
     background-color: #000;
 }
+.submenu > .menu__item
+{
+    display: none;
+}
 
 .submenu__item
-{
-    -webkit-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-}
-.submenu__item a
 {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.4em;
 
-    display: block;
+    display: none;
 
     width: 100%;
     padding: 4px 8px;
@@ -827,9 +824,10 @@ header
          -o-transition: .5s;
             transition: .5s; 
 
+    color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
-.submenu__item a:hover
+.submenu__item:hover
 {
     -webkit-transition: .3s;
          -o-transition: .3s;
