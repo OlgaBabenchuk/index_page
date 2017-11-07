@@ -765,6 +765,29 @@ header
     display: none;
 }
 
+.main-nav
+{
+    position: relative; 
+
+    width: auto;
+    margin-bottom: -10px;
+}
+.main-nav .menu__item:last-of-type:before
+{
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
 .menu__item
 {
     font-size: 1.2em;
@@ -798,15 +821,26 @@ header
 {
     position: absolute;
     z-index: 10; 
+    right: -4.1em;
+
+    display: block;
+    overflow: hidden;
 
     width: 13em;
-    padding: 4px;
+    height: 0;
+    padding: 0;
+
+    -webkit-transition: height .3s, padding-top .1s, padding-bottom .1s;
+         -o-transition: height .3s, padding-top .1s, padding-bottom .1s;
+            transition: height .3s, padding-top .1s, padding-bottom .1s;
 
     background-color: #000;
 }
-.submenu > .menu__item
+
+.submenu--open
 {
-    display: none;
+    height: 99px; 
+    padding: 4px;
 }
 
 .submenu__item
@@ -815,7 +849,7 @@ header
     font-weight: 400;
     line-height: 1.4em;
 
-    display: none;
+    display: block;
 
     width: 100%;
     padding: 4px 8px;

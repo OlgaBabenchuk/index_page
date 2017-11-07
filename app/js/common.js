@@ -52,6 +52,28 @@
 
 window.onload = function() {
 
+  /*   dropdown main naviation   */
+
+  var submenu = document.getElementsByClassName('submenu')[0],
+      menu = document.getElementsByClassName('menu__item'),
+      dropdownItem = document.getElementsByClassName('menu__item')[menu.length - 1],
+      body = document.getElementsByTagName('body')[0];
+
+  submenu.classList.add('submenu--ready');
+
+  function openSubmenu(e) {
+    submenu.classList.add('submenu--open');
+    e.stopPropagation();
+  }
+
+  function closeSubmenu() {
+    submenu.classList.remove('submenu--open');
+  }
+
+  dropdownItem.addEventListener('click', openSubmenu);
+  body.addEventListener('click', closeSubmenu);
+
+
   /*   toggle sidebar menu   */
 
   var burgerMenu = document.getElementsByClassName('mob-menu-trigger')[0],
